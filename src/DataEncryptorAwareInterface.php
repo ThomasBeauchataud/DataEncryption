@@ -9,24 +9,18 @@
  * file that was distributed with this source code.
  *
  * Author Thomas Beauchataud
- * From 13/06/2023
+ * From 17/09/2023
  */
 
 namespace TBCD\DataEncryption;
 
-interface DataEncryptorInterface
+interface DataEncryptorAwareInterface extends DataEncryptorInterface
 {
 
     /**
-     * @param string $decryptedData
-     * @return string
+     * @param string $data
+     * @return bool
      */
-    public function encrypt(string $decryptedData): string;
-
-    /**
-     * @param string $encryptedData
-     * @return string
-     */
-    public function decrypt(string $encryptedData): string;
+    public function isEncrypted(string $data): bool;
 
 }

@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of the tbcd/ata-encryption library.
+ * This file is part of the tbcd/data-encryption library.
  *
  * (c) Thomas Beauchataud <thomas.beauchataud@yahoo.fr>
  *
